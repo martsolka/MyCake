@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCake - Сторінка товару</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,regular,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="index.html" class="header__logo">
+                    <img src="img/MyCake.svg" alt="">
+                </a>
+                <div class="header__menu menu">
+                    <button class="menu__button" type="button" data-path="region-select-modal">
+                        <svg width="14" height="20">
+                            <use xlink:href="./img/icons.svg#location"></use>
+                        </svg>
+                        <span>Вся Україна</span>
+                    </button>
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="deserts.html" class="menu__link">Десерти</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="best-confectioners.html" class="menu__link">Кращі кондитери</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="articles.html" class="menu__link">Корисні статті</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu__actions actions">
+                    <ul class="actions__list">
+                        <li class="actions__item">
+                            <a href="#!" class="actions__link link-chat">
+                                <svg width="26" height="26">
+                                    <use xlink:href="./img/icons.svg#chat"></use>
+                                </svg>
+                                <span class="link-chat__notification">2</span>
+                            </a>
+                        </li>
+                        <li class="actions__item">
+                            <a href="#!" class="actions__link link-account">
+                                <svg width="26" height="26">
+                                    <use xlink:href="./img/icons.svg#user"></use>
+                                </svg>
+                                <span class="link-account__username">Інна Пономаренко</span>
+                            </a>
+                            <nav class="dropdown">
+                                <ul class="dropdown__content">
+                                    <li class="dropdown__item">
+                                        <a href="#!" class="dropdown__link">Мої заявки</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#!" class="dropdown__link">Збережені шаблони</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#!" class="dropdown__link">
+                                            Вийти
+                                            <svg width="13" height="12">
+                                                <use xlink:href="./img/icons.svg#logout"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="menu__icon icon-menu"><span></span></button>
+            </div>
+        </header>
+        <main class="main">
+            <div class="search__container">
+                <form class="search-form">
+                    <input class="search-form__input input" type="text" placeholder="Шоколадний торт з квітами"
+                        required>
+                    <input class="search-form__btn" type="submit" value="Шукати">
+                </form>
+                <div class="search-result">
+
+                </div>
+            </div>
+            <section class="product">
+                <div class="product__container">
+                    <div class="product__gallery"></div>
+                    <div class="product__info info-product">
+                        <h5 class="info-product__name">Торт “Червоний оксамит”</h5>
+                        <div class="info-product__price">670 грн</div>
+                        <ul class="info-product__features">
+                            <li class="info-product__feature-item">2 кг</li>
+                            <li class="info-product__feature-item">Начинка: червоний оксамит</li>
+                            <li class="info-product__feature-item">Прикраси з мастики</li>
+                        </ul>
+                        <div class="info-product__description">Цей торт особливо актуальний до Дня святого Валентина. Ви
+                            тільки подивіться, який він пристрасний!) І смачний звичайно. І з приготуванням впорається
+                            будь-хто! Загалом все, як ми любимо! Тому цей «Червоний оксамит» до приготування
+                            обов'язковий. Щоб отримати такий насичений червоний колір, використовуйте або сухі індійські
+                            барвники (Roha), або гелевий Americolor Red Red.
+                        </div>
+                        <div class="product__action-btns">
+                            <button class="product__btn product__btn--parameters" data-path="">Обрати параметри</button>
+                            <button class="product__btn product__btn--contacts" data-path="contacts">Переглянути
+                                контакти</button>
+                            <button class="product__btn product__btn--favorite">
+                                <svg width="24" height="24">
+                                    <use href="./img/sprite.svg#favorite"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="other-products">
+                <div class="other-products__container swiper">
+                    <div class="swiper-top">
+                        <h3 class="title">Інші вироби кондитера</h3>
+                        <div class="swiper-actions">
+                            <a href="#!" class="swiper-button-view-all">Переглянути всі</a>
+                            <div class="swiper-button-prev">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.41016 10.59L2.83016 6L7.41016 1.41L6.00016 0L0.000156403 6L6.00016 12L7.41016 10.59Z" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cupcakes-slider/img1.jpg" alt="Cake 1">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Пасхальні капкейки шоколадні та ванільні </p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cupcakes-slider/img2.jpg" alt="Cake 2">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Оригінальні капкейки з кремом та печивом</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cupcakes-slider/img3.jpg" alt="Cake 3">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Капкейки з карамеллю 3 шт</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cupcakes-slider/img4.jpg" alt="Cake 4">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Капкейки з ніжним кремом</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cupcakes-slider/img5.jpg" alt="Cake 5">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Чорні капкейки з шоколадом та печивом</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cupcakes-slider/img1.jpg" alt="Cake 1">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Пасхальні капкейки шоколадні та ванільні </p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="similar-products">
+                <div class="similar-products__container swiper">
+                    <div class="swiper-top">
+                        <h3 class="title">Схожі торти</h3>
+                        <div class="swiper-actions">
+                            <a href="#!" class="swiper-button-view-all">Переглянути всі</a>
+                            <div class="swiper-button-prev">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.41016 10.59L2.83016 6L7.41016 1.41L6.00016 0L0.000156403 6L6.00016 12L7.41016 10.59Z" />
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg width="8" height="12" viewBox="0 0 8 12" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.589844 10.59L5.16984 6L0.589844 1.41L1.99984 0L7.99984 6L1.99984 12L0.589844 10.59Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cakes-slider/img1.jpg" alt="Cake 1">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Торт “Літнє бажання” з шоколадом та макарунами</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cakes-slider/img2.jpg" alt="Cake 2">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Весільний триярусний торт з фруктами та квітами</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cakes-slider/img3.jpg" alt="Cake 3">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Бісквітний торт з ягодами</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cakes-slider/img4.jpg" alt="Cake 4">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Ванільно-карамельний торт з печивом Орео</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <a class="product__card-content" href="product-details.html">
+                                <div class="product__img">
+                                    <img src="img/cakes-slider/img5.jpg" alt="Cake 5">
+                                </div>
+                                <div class="product__info info-product">
+                                    <p class="info-product__price">520 грн</p>
+                                    <p class="info-product__name">Торт рожевий з макарунами</p>
+                                    <p class="info-product__variants">4 варіанти начинок</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide product">
+                            <div class="product__img">
+                                <img src="img/cakes-slider/img1.jpg" alt="Cake 1">
+                            </div>
+                            <div class="product__info info-product">
+                                <p class="info-product__price">520 грн</p>
+                                <p class="info-product__name">Торт “Літнє бажання” з шоколадом та макарунами</p>
+                                <p class="info-product__variants">4 варіанти начинок</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__left">
+                    <a href="" class="footer__logo">
+                        <img src="img/MyCake-light.svg" alt="MyCake logo">
+                    </a>
+                    <button class="menu__button" type="button" data-path="region-select-modal">
+                        <svg width="14" height="20">
+                            <use xlink:href="./img/icons.svg#location"></use>
+                        </svg>
+                        <span>Вся Україна</span>
+                    </button>
+                </div>
+                <div class="footer__menu menu">
+                    <nav class="menu__nav">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#!" class="menu__link">Десерти</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#!" class="menu__link">Кращі кондитери</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#!" class="menu__link">Корисні статті</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__right right-footer">
+                    <a class="right-footer__btn--outline" href="#!">Правила користування</a>
+                    <div class="right-footer__copyrights">
+                        © Mycake 2022
+                        <p>All rights reserved</p>
+                    </div>
+                    <a class="right-footer__btn--fill" href="#!">Форма зворотнього зв’язку</a>
+                    <div class="right-footer__socials">
+                        <a href="#!">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.9996 0H5.99985C2.70023 0 0 2.70023 0 5.99985V18.0001C0 21.2989 2.70023 24 5.99985 24H17.9996C21.2992 24 23.9994 21.2989 23.9994 18.0001V5.99985C23.9994 2.70023 21.2992 0 17.9996 0ZM21.9994 18.0001C21.9994 20.2051 20.2057 22 17.9996 22H5.99985C3.79461 22 2.00005 20.2051 2.00005 18.0001V5.99985C2.00005 3.79432 3.79461 2.00005 5.99985 2.00005H17.9996C20.2057 2.00005 21.9994 3.79432 21.9994 5.99985V18.0001Z" />
+                                <path
+                                    d="M18.5009 6.99993C19.3293 6.99993 20.0009 6.32837 20.0009 5.49996C20.0009 4.67156 19.3293 4 18.5009 4C17.6725 4 17.001 4.67156 17.001 5.49996C17.001 6.32837 17.6725 6.99993 18.5009 6.99993Z" />
+                                <path
+                                    d="M11.9999 6C8.68552 6 6 8.68581 6 11.9999C6 15.3127 8.68552 18.0003 11.9999 18.0003C15.3132 18.0003 17.9997 15.3127 17.9997 11.9999C17.9997 8.68581 15.3132 6 11.9999 6ZM11.9999 16.0002C9.79098 16.0002 8.00005 14.2093 8.00005 11.9999C8.00005 9.7904 9.79098 8.00005 11.9999 8.00005C14.2087 8.00005 15.9997 9.7904 15.9997 11.9999C15.9997 14.2093 14.2087 16.0002 11.9999 16.0002Z" />
+                            </svg>
+
+                        </a>
+                        <a href="#!">
+                            <svg width="24" height="17" viewBox="0 0 24 17" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.5055 2.62939C23.229 1.60122 22.4183 0.790727 21.3903 0.513864C19.5122 -3.57629e-08 11.9997 0 11.9997 0C11.9997 0 4.48756 0 2.60948 0.494401C1.60122 0.770964 0.770814 1.6014 0.494251 2.62939C0 4.50732 0 8.40197 0 8.40197C0 8.40197 0 12.3162 0.494251 14.1745C0.771077 15.2025 1.58145 16.013 2.60963 16.2898C4.50732 16.8039 12 16.8039 12 16.8039C12 16.8039 19.5122 16.8039 21.3903 16.3095C22.4184 16.0327 23.229 15.2223 23.5058 14.1942C23.9999 12.3162 23.9999 8.42169 23.9999 8.42169C23.9999 8.42169 24.0197 4.50728 23.5055 2.62939ZM9.6079 11.9999V4.80391L15.8549 8.40189L9.6079 11.9999Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
